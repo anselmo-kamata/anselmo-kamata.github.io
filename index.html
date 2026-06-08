@@ -3,319 +3,335 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anselmo Kamata — Video Editor & Graphic Designer</title>
-<meta name="description" content="Anselmo Kamata — Video editor, graphic designer and content creator based in Kraków, Poland. Fast turnaround, results-driven content in 4 languages.">
+<title>Anselmo Kamata — Video Editor, Designer & Content Creator</title>
+<meta name="description" content="Anselmo Kamata — Video Editor, Graphic Designer & Content Creator based in Kraków, Poland. Fast, dynamic, results-driven content for brands and creators.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#0b0d12; --bg2:#11141c; --card:#161a24; --line:#242a38;
-  --text:#e8eaf0; --muted:#9aa3b5; --accent:#4f7cff; --accent2:#9b5cff;
-  --grad:linear-gradient(90deg,#4f7cff,#9b5cff);
-}
+:root{--bg:#f7f7f4;--surface:#fff;--ink:#16181d;--ink2:#4a4f5a;--muted:#8b909c;--line:#e7e7e2;--accent:#3b5bff;--accent2:#ff5a3c;--accent-soft:#eef1ff;--shadow:0 10px 40px rgba(20,24,40,.08);--shadow-lg:0 24px 70px rgba(20,24,40,.14);--radius:18px}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-h1,h2,h3{font-family:'Sora',sans-serif}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-section{padding:100px 0}
-.tag{display:inline-block;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}
-h2{font-size:clamp(28px,4vw,40px);margin-bottom:28px;letter-spacing:-.5px}
-.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav-in{max-width:1100px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-family:'Sora',sans-serif;font-weight:800;font-size:18px}
-.nav-links{display:flex;gap:28px;font-size:14px;color:var(--muted)}
-.nav-links a:hover{color:var(--text)}
-.btn{display:inline-block;background:var(--grad);color:#fff;padding:12px 26px;border-radius:10px;font-weight:600;font-size:15px;transition:.2s;border:none;cursor:pointer}
-.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(79,124,255,.35)}
-.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
-.btn.sm{padding:9px 18px;font-size:13px}
-
-/* HERO */
-.hero{position:relative;padding:170px 0 90px;overflow:hidden}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.18;filter:saturate(1.2)}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,13,18,.55),rgba(11,13,18,.92)),radial-gradient(1000px 500px at 70% -10%,rgba(79,124,255,.25),transparent)}
-.hero .wrap{position:relative;z-index:2}
-.hero-flex{display:flex;align-items:center;gap:56px;flex-wrap:wrap}
-.hero-text{flex:1;min-width:300px}
-.hero-photo{flex-shrink:0;width:270px;height:270px;border-radius:50%;padding:7px;background:var(--grad);box-shadow:0 0 60px rgba(79,124,255,.45)}
-.hero-photo .ring{width:100%;height:100%;border-radius:50%;padding:9px;background:var(--bg)}
-.hero-photo img{width:100%;height:100%;border-radius:50%;object-fit:cover;background:#fff;display:block}
-@media(max-width:760px){.hero-flex{flex-direction:column-reverse;text-align:left}.hero-photo{width:200px;height:200px;margin:0 auto}}
-.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.1;margin-bottom:22px}
-.hero p.lead{font-size:19px;color:var(--muted);max-width:640px;margin-bottom:34px}
-.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:42px}
-.badge{font-size:13px;color:var(--muted);border:1px solid var(--line);padding:7px 14px;border-radius:999px;background:var(--bg2)}
-
-/* STATS */
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:-30px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;text-align:center}
-.stat b{display:block;font-family:'Sora',sans-serif;font-size:30px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.stat span{font-size:14px;color:var(--muted)}
-
-/* SHOWREEL */
-.reel{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.video-frame{position:relative;width:100%;aspect-ratio:16/9;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.placeholder{color:var(--muted);text-align:center;padding:24px;font-size:15px}
-
-/* SERVICES */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px;transition:.2s}
-.card:hover{border-color:var(--accent);transform:translateY(-4px)}
-.card .ico{font-size:28px;margin-bottom:14px}
-.card h3{font-size:19px;margin-bottom:10px}
-.card p{font-size:14.5px;color:var(--muted)}
-
-/* WORK */
-.work-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-bottom:56px}
-.cat-title{font-size:22px;margin:56px 0 26px;padding-bottom:12px;border-bottom:1px solid var(--line)}
-.cat-title:first-of-type{margin-top:10px}
-.work{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s}
-.work:hover{border-color:var(--accent2)}
-.thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#1a1f2e,#11141c);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;overflow:hidden}
-.thumb img,.thumb iframe{width:100%;height:100%;object-fit:cover;border:0}
-.work .info{padding:20px 22px}
-.work h3{font-size:17px;margin-bottom:6px}
-.work .meta{font-size:13px;color:var(--accent);margin-bottom:8px;font-weight:600}
-.work p{font-size:14px;color:var(--muted)}
-.result{display:inline-block;margin-top:10px;font-size:13px;font-weight:600;color:#7ee787}
-
-/* ABOUT */
-.about-flex{display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap}
-.about-text{flex:1;min-width:300px}
-.about-side{width:300px;display:flex;flex-direction:column;gap:14px}
-.side-box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
-.side-box h4{font-family:'Sora',sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
-.side-box ul{list-style:none;font-size:14px;color:var(--muted)}
-.side-box li{padding:4px 0}
-.about-text p{color:var(--muted);margin-bottom:16px;font-size:16px}
-
-/* PROCESS */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;counter-reset:step}
-.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;position:relative}
-.step::before{counter-increment:step;content:"0" counter(step);font-family:'Sora',sans-serif;font-size:13px;font-weight:800;color:var(--accent)}
-.step h3{font-size:17px;margin:10px 0 8px}
-.step p{font-size:14px;color:var(--muted)}
-
-/* CONTACT */
-.contact{background:var(--bg2);border-top:1px solid var(--line);text-align:center}
-.contact p{color:var(--muted);max-width:560px;margin:0 auto 30px}
-.contact-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:8px}
-footer{padding:28px 0;text-align:center;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
-@media(max-width:640px){.nav-links{display:none}}
-
-/* VIDEO PLAYERS */
-.thumb video{width:100%;height:100%;object-fit:cover;display:block;background:#000}
-.thumb.vert{aspect-ratio:9/16;max-height:480px}
-.player-note{font-size:12px;color:var(--muted);margin-top:8px}
-
-/* LIGHTBOX GALLERY */
-.lightbox{position:fixed;inset:0;background:rgba(5,6,10,.96);z-index:200;display:none;align-items:center;justify-content:center;flex-direction:column}
-.lightbox.open{display:flex}
-.lightbox img{max-width:92vw;max-height:80vh;border-radius:10px;box-shadow:0 20px 80px rgba(0,0,0,.6);user-select:none}
-.lb-caption{color:var(--muted);font-size:14px;margin-top:16px;text-align:center;max-width:80vw}
-.lb-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.08);border:1px solid var(--line);color:#fff;font-size:26px;width:52px;height:52px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s}
-.lb-btn:hover{background:var(--accent)}
-.lb-prev{left:18px}.lb-next{right:18px}
-.lb-close{position:absolute;top:18px;right:22px;background:none;border:none;color:#fff;font-size:34px;cursor:pointer}
-.lb-count{position:absolute;top:26px;left:26px;color:var(--muted);font-size:14px}
-.gallery-item{cursor:pointer}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Sora',sans-serif}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:110px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:18px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+h2.title{font-size:clamp(30px,4.5vw,46px);font-weight:800;letter-spacing:-1px;line-height:1.1;margin-bottom:20px}
+.lead{font-size:18px;color:var(--ink2);max-width:620px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;padding:14px 28px;border-radius:50px;font-weight:600;font-size:15px;transition:.25s;border:none;cursor:pointer}
+.btn:hover{background:var(--accent);transform:translateY(-2px);box-shadow:0 12px 30px rgba(59,91,255,.3)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.sm{padding:10px 20px;font-size:14px}
+nav{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(247,247,244,.82);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:.3s}
+nav.scrolled{border-color:var(--line);background:rgba(247,247,244,.95)}
+.nav-in{max-width:1180px;margin:0 auto;padding:18px 28px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Sora';font-weight:800;font-size:20px;letter-spacing:-.5px}.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:30px;font-size:14.5px;font-weight:500;color:var(--ink2)}
+.nav-links a{position:relative;transition:.2s}.nav-links a:hover{color:var(--ink)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:2px;background:var(--accent);transition:.25s}
+.nav-links a:hover::after{width:100%}
+.hero{padding:160px 0 90px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(40px,6.4vw,74px);font-weight:800;line-height:1.02;letter-spacing:-2px;margin-bottom:24px}
+.hero h1 .hi{display:block;font-size:clamp(18px,2.4vw,24px);font-weight:600;color:var(--accent);letter-spacing:1px;margin-bottom:10px}
+.hero h1 em{font-style:normal;position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;bottom:6px;width:100%;height:14px;background:var(--accent-soft);z-index:-1}
+.hero .lead{margin-bottom:34px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.hero-meta{display:flex;gap:22px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);font-weight:500}
+.hero-meta b{color:var(--ink);font-weight:600}
+.hero-visual{position:relative}
+.hero-card{background:#000;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5;position:relative}
+.hero-card video{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 18px;display:flex;align-items:center;gap:12px}
+.hero-badge .n{font-family:'Sora';font-weight:800;font-size:22px;line-height:1}
+.hero-badge .l{font-size:12px;color:var(--muted);line-height:1.3}
+.hb1{top:24px;left:-26px}.hb2{bottom:26px;right:-22px}
+.hero-blob{position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(59,91,255,.16),transparent 70%);top:-60px;right:-60px;z-index:-1}
+.marquee{background:var(--ink);color:#fff;padding:20px 0;overflow:hidden;white-space:nowrap}
+.marquee-track{display:inline-flex;gap:48px;animation:scroll 26s linear infinite;font-family:'Sora';font-weight:600;font-size:18px}
+.marquee-track span{display:inline-flex;align-items:center;gap:48px;color:rgba(255,255,255,.85)}
+.marquee-track span::after{content:"✦";color:var(--accent2)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:50px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:.28s}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.svc .ic{width:54px;height:54px;border-radius:14px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:20px}
+.svc h3{font-size:19px;font-weight:700;margin-bottom:10px}.svc p{font-size:14.5px;color:var(--ink2)}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:54px;align-items:center}
+.about-photo{position:relative}
+.about-photo .frame{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);background:#fff;aspect-ratio:3/3.4}
+.about-photo .frame img{width:100%;height:100%;object-fit:cover}
+.about-photo .deco{position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--accent);border-radius:24px;z-index:-1}
+.about p{color:var(--ink2);margin-bottom:18px;font-size:16.5px}
+.info-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:8px 0;margin:26px 0;box-shadow:var(--shadow)}
+.info-row{display:grid;grid-template-columns:150px 1fr;padding:13px 26px;font-size:14.5px;border-bottom:1px solid var(--line)}
+.info-row:last-child{border:none}
+.info-row .k{color:var(--muted);font-weight:600}.info-row .v{color:var(--ink);font-weight:500}
+.lang-bars{display:flex;flex-direction:column;gap:14px;margin-top:28px}
+.lang{display:flex;align-items:center;gap:14px}
+.lang .lname{width:96px;font-size:14px;font-weight:600}
+.lang .track{flex:1;height:8px;background:var(--line);border-radius:50px;overflow:hidden}
+.lang .fill{height:100%;background:linear-gradient(90deg,var(--accent),#6f86ff);border-radius:50px}
+.lang .lvl{font-size:12px;color:var(--muted);width:54px;text-align:right}
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:20px;margin-top:50px}
+.exp{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.25s;position:relative;overflow:hidden}
+.exp::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:.3s}
+.exp:hover{box-shadow:var(--shadow);transform:translateY(-4px)}.exp:hover::before{transform:scaleY(1)}
+.exp .role{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.exp h3{font-size:18px;font-weight:700;margin-bottom:6px}
+.exp .yr{font-size:13px;color:var(--muted);margin-bottom:12px;font-weight:500}
+.exp p{font-size:14px;color:var(--ink2)}
+.exp a.more{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--accent)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:38px 0 40px}
+.filter{padding:10px 22px;border-radius:50px;border:1.5px solid var(--line);background:var(--surface);font-size:14px;font-weight:600;color:var(--ink2);cursor:pointer;transition:.22s}
+.filter:hover{border-color:var(--accent);color:var(--accent)}
+.filter.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.port-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:24px}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s;cursor:pointer;display:flex;flex-direction:column}
+.pcard:hover{box-shadow:var(--shadow-lg);transform:translateY(-6px)}
+.pcard .media{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0d0f14}
+.pcard .media.vert{aspect-ratio:3/4}
+.pcard .media img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.pcard:hover .media img{transform:scale(1.05)}
+.pcard .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.18);transition:.3s}
+.pcard .play span{width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--ink);padding-left:4px;box-shadow:var(--shadow)}
+.pcard:hover .play{background:rgba(0,0,0,.32)}
+.pcard .tagcat{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.95);color:var(--ink);font-size:11.5px;font-weight:700;padding:6px 12px;border-radius:50px;text-transform:uppercase;letter-spacing:.5px}
+.pcard .body{padding:22px 24px;flex:1;display:flex;flex-direction:column}
+.pcard h3{font-size:18px;font-weight:700;margin-bottom:8px;line-height:1.25}
+.pcard p{font-size:14px;color:var(--ink2);flex:1}
+.pcard .res{margin-top:14px;font-size:13px;font-weight:700;color:#0a8a4d;display:inline-flex;align-items:center;gap:6px}
+.hidden{display:none!important}
+.lb{position:fixed;inset:0;background:rgba(12,14,20,.95);z-index:200;display:none;align-items:center;justify-content:center;padding:30px}
+.lb.open{display:flex}
+.lb-inner{max-width:1000px;width:100%;max-height:90vh;background:var(--surface);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.lb-media{background:#000;display:flex;align-items:center;justify-content:center;max-height:62vh;overflow:hidden}
+.lb-media img{max-width:100%;max-height:62vh;object-fit:contain}
+.lb-media video{width:100%;max-height:62vh}
+.lb-media iframe{width:100%;aspect-ratio:16/9;border:0}
+.lb-body{padding:26px 30px}
+.lb-body .cat{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px}
+.lb-body h3{font-size:22px;font-weight:700;margin:6px 0 10px}
+.lb-body p{font-size:15px;color:var(--ink2)}
+.lb-close{position:absolute;top:22px;right:26px;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.14);border:none;color:#fff;font-size:24px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s}
+.lb-close:hover{background:var(--accent2)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.14);border:none;color:#fff;font-size:26px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s}
+.lb-nav:hover{background:var(--accent)}.lb-prev{left:24px}.lb-next{right:24px}
+.lb-count{position:absolute;top:30px;left:30px;color:rgba(255,255,255,.7);font-size:14px;font-weight:600}
+.contact{background:var(--ink);color:#fff;border-radius:34px;margin:0 28px;padding:80px 40px;text-align:center;position:relative;overflow:hidden}
+.contact .eyebrow{color:#7e93ff}.contact .eyebrow::before{background:#7e93ff}
+.contact h2{color:#fff;font-size:clamp(30px,4.5vw,48px);font-weight:800;letter-spacing:-1px;margin-bottom:18px}
+.contact p{color:rgba(255,255,255,.7);max-width:520px;margin:0 auto 34px;font-size:17px}
+.contact-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.contact .btn{background:#fff;color:var(--ink)}.contact .btn:hover{background:var(--accent);color:#fff}
+.contact .btn.ghost{background:transparent;border-color:rgba(255,255,255,.25);color:#fff}
+.contact .btn.ghost:hover{background:#fff;color:var(--ink)}
+.contact-blob{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(59,91,255,.4),transparent 70%);bottom:-160px;left:-80px}
+.socials{display:flex;gap:14px;justify-content:center;margin-top:30px;flex-wrap:wrap}
+.socials a{font-size:13.5px;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.2);padding:8px 16px;border-radius:50px;transition:.2s}
+.socials a:hover{background:#fff;color:var(--ink);border-color:#fff}
+footer{text-align:center;padding:40px 0;font-size:13.5px;color:var(--muted)}
+@media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr;gap:40px}.hero-visual{max-width:360px;margin:0 auto}.nav-links{display:none}section{padding:80px 0}.info-row{grid-template-columns:120px 1fr}}
+@media(max-width:560px){.hb1{left:8px}.hb2{right:8px}.contact{margin:0 16px;padding:60px 24px}}
 </style>
 </head>
 <body>
-
-<nav>
-  <div class="nav-in">
-    <div class="logo">AK<span class="grad">.</span></div>
-    <div class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <a class="btn sm" href="#contact">Hire Me</a>
+<nav id="nav"><div class="nav-in">
+  <a href="#home" class="logo">Anselmo<span>.</span></a>
+  <div class="nav-links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+  <a href="#contact" class="btn sm">Hire Me</a>
+</div></nav>
+<header class="hero" id="home"><div class="wrap"><div class="hero-grid">
+  <div class="hero-text">
+    <h1><span class="hi">Hi, I'm Anselmo Kamata 👋</span>Video Editor, <em>Designer</em> &amp; Content Creator</h1>
+    <p class="lead">I help brands and creators turn ideas into content that gets <b>watched, shared and remembered</b> — fast, dynamic and built with today's technology. Based in Kraków, available worldwide.</p>
+    <div class="hero-cta"><a href="#work" class="btn">View My Work →</a><a href="#contact" class="btn ghost">Let's Talk</a></div>
+    <div class="hero-meta"><span>🇪🇺 <b>EU-based</b> · remote-ready</span><span>🗣️ <b>4 languages</b></span><span>⚡ <b>10+ years</b> creating</span></div>
   </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <video class="hero-bg" autoplay muted loop playsinline src="hero_bg.mp4"></video>
-  <div class="hero-overlay"></div>
-  <div class="wrap">
-    <div class="hero-flex">
-      <div class="hero-text">
-        <span class="tag">Video Editor · Graphic Designer · Content Creator</span>
-        <h1>I turn ideas into content that gets <span class="grad">watched, shared and remembered</span>.</h1>
-        <p class="lead">I'm Anselmo Kamata — a multilingual creative based in Kraków, Poland. I script, shoot, edit, design and publish content that builds audiences and drives results — fast, dynamic and built with today's technology.</p>
-        <div class="cta">
-          <a class="btn" href="#work">See My Work</a>
-          <a class="btn ghost" href="#contact">Get In Touch</a>
-        </div>
-      </div>
-      <!-- Foto removida por agora. Para repor, descomenta a linha abaixo:
-      <div class="hero-photo"><div class="ring"><img src="photo.png" alt="Anselmo Kamata"></div></div>
-      -->
+  <div class="hero-visual">
+    <div class="hero-blob"></div>
+    <div class="hero-card"><video autoplay muted loop playsinline poster="vid_carlos.jpg" src="hero_bg.mp4"></video></div>
+    <div class="hero-badge hb1"><div class="n">100K+</div><div class="l">views<br>generated</div></div>
+    <div class="hero-badge hb2"><div class="n">2×</div><div class="l">design<br>awards</div></div>
+  </div>
+</div></div></header>
+<div class="marquee"><div class="marquee-track">
+  <span>Video Editing</span><span>Graphic Design</span><span>Thumbnails</span><span>Motion Graphics</span><span>Reels &amp; Shorts</span><span>3D Visualization</span><span>Content Strategy</span><span>SEO &amp; Copywriting</span>
+  <span>Video Editing</span><span>Graphic Design</span><span>Thumbnails</span><span>Motion Graphics</span><span>Reels &amp; Shorts</span><span>3D Visualization</span><span>Content Strategy</span><span>SEO &amp; Copywriting</span>
+</div></div>
+<section id="about"><div class="wrap"><div class="about-grid">
+  <div class="about-photo"><div class="frame"><img src="photo.png" alt="Anselmo Kamata"></div><div class="deco"></div></div>
+  <div class="about">
+    <span class="eyebrow">About Me</span>
+    <h2 class="title">A creative who can do<br>the whole pipeline</h2>
+    <p>I'm an <b>architect by training</b> (BSc, Cracow University of Technology) who works across video, design, content and technology — a rare mix that means I understand structure, composition and the business goal behind every project, not just the software.</p>
+    <p>Since 2013 I've scripted, shot, edited, designed and published content for marketing agencies, dental clinics, sports communities and YouTube channels — long-form, short-form, ads and thumbnails. I work fast, communicate clearly, and I do it in four languages.</p>
+    <div class="info-card">
+      <div class="info-row"><div class="k">Name</div><div class="v">Anselmo Kamata</div></div>
+      <div class="info-row"><div class="k">Based in</div><div class="v">Kraków, Poland 🇵🇱 (EU)</div></div>
+      <div class="info-row"><div class="k">Focus</div><div class="v">Video · Design · Content · 3D</div></div>
+      <div class="info-row"><div class="k">Education</div><div class="v">BSc Architecture</div></div>
+      <div class="info-row"><div class="k">Email</div><div class="v">anselmokamata24@gmail.com</div></div>
     </div>
-    <div class="badges">
-      <span class="badge">🇪🇺 EU-based · No work permit needed</span>
-      <span class="badge">🌍 Portuguese · English · Polish · Spanish</span>
-      <span class="badge">⚡ Premiere · After Effects · CapCut · DaVinci</span>
-      <span class="badge">🚀 Fast · Dynamic · 2026-ready quality</span>
+    <div class="lang-bars">
+      <div class="lang"><span class="lname">Portuguese</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="lvl">Native</span></div>
+      <div class="lang"><span class="lname">English</span><span class="track"><span class="fill" style="width:90%"></span></span><span class="lvl">C1</span></div>
+      <div class="lang"><span class="lname">Polish</span><span class="track"><span class="fill" style="width:88%"></span></span><span class="lvl">C1</span></div>
+      <div class="lang"><span class="lname">Spanish</span><span class="track"><span class="fill" style="width:70%"></span></span><span class="lvl">B2</span></div>
     </div>
   </div>
-</header>
-
-<!-- STATS -->
-<div class="wrap">
-  <div class="stats">
-    <div class="stat"><b>100K+</b><span>views generated across platforms</span></div>
-    <div class="stat"><b>20,000</b><span>followers grown on a single page</span></div>
-    <div class="stat"><b>2</b><span>international design awards</span></div>
-    <div class="stat"><b>10+ yrs</b><span>creating content since 2013</span></div>
+</div></div></section>
+<section id="experience" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <span class="eyebrow">Experience &amp; Clients</span>
+  <h2 class="title">Who I've worked with</h2>
+  <p class="lead">A selection of brands, agencies and channels I've delivered editing, design and content services for.</p>
+  <div class="exp-grid">
+    <div class="exp"><div class="role">Video Editor &amp; Graphic Design</div><h3>Cidadãos Exemplares</h3><div class="yr">Client YouTube channel · Educational tech &amp; storytelling</div><p>Full editing for long-form documentaries and Shorts — research-driven storytelling, motion graphics, sound design and custom thumbnails.</p><a class="more" href="https://www.youtube.com/@CidadaosExemplares/videos" target="_blank" rel="noopener">View channel →</a></div>
+    <div class="exp"><div class="role">Video Editor &amp; Thumbnails</div><h3>Witness This Ca$e</h3><div class="yr">Client YouTube channel · English true-story</div><p>Editing and thumbnail/graphic design for an English-language storytelling channel — faceless narration, 3D-style visuals and bold, click-driven thumbnails.</p><a class="more" href="https://www.youtube.com/@WitenessThis/videos" target="_blank" rel="noopener">View channel →</a></div>
+    <div class="exp"><div class="role">Content Creator &amp; Designer</div><h3>BK-Nação Marketing &amp; Design</h3><div class="yr">Agency · Healthcare &amp; social media</div><p>Original video, image and copy for clients' social media — Instagram reels &amp; ads (1:1 / 9:16), content calendars and metric-driven optimization.</p><a class="more" href="https://bknacao.net/" target="_blank" rel="noopener">Visit agency →</a></div>
+    <div class="exp"><div class="role">3D Visualization &amp; Design</div><h3>Karpiel Steindel</h3><div class="yr">Architecture studio · Assistant</div><p>Photorealistic exterior &amp; interior visualizations, project research and design presentations for an international architecture practice.</p></div>
+    <div class="exp"><div class="role">Content &amp; Community</div><h3>Mais Futebol-News</h3><div class="yr">Facebook · Copywriting &amp; community</div><p>Researched, copywrote and published daily content that grew and sustained an engaged sports community of 20,000+ followers.</p><a class="more" href="https://www.facebook.com/share/1Ck31ozTPC/?mibextid=wwXIfr" target="_blank" rel="noopener">View page →</a></div>
+    <div class="exp"><div class="role">Video</div><h3>Eterna Aprendizagem</h3><div class="yr">Client YouTube channel · Educational</div><p>Scripted and edited educational, culturally engaging videos with consistent community growth and viewer interaction.</p><a class="more" href="https://www.youtube.com/@eternaaprendizagem/videos" target="_blank" rel="noopener">View channel →</a></div>
   </div>
+</div></section>
+<section id="work"><div class="wrap">
+  <span class="eyebrow">Portfolio</span>
+  <h2 class="title">Selected work</h2>
+  <p class="lead">Click any project to play the video or open the gallery. Filter by what you're looking for.</p>
+  <div class="filters" id="filters">
+    <button class="filter active" data-f="all">All</button>
+    <button class="filter" data-f="video">Video Editing</button>
+    <button class="filter" data-f="reels">Reels &amp; Shorts</button>
+    <button class="filter" data-f="design">Graphic Design</button>
+    <button class="filter" data-f="thumb">Thumbnails</button>
+    <button class="filter" data-f="arch">Architecture &amp; 3D</button>
+  </div>
+  <div class="port-grid" id="grid">
+    <div class="pcard" data-cat="video" data-type="video" data-src="doc_carlos_preview.mp4" data-cap="Animated Documentary Edit — full-length documentary built with illustrated motion graphics: custom animation, pacing and narration sync. 2-min preview; full film on request.">
+      <div class="media"><img src="vid_carlos.jpg" alt="Animated documentary"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing</div></div>
+      <div class="body"><h3>Animated Documentary Edit</h3><p>Full-length documentary with custom illustrated motion graphics, pacing and narration sync.</p><span class="res">▲ Motion design + long-form</span></div></div>
+    <div class="pcard" data-cat="video" data-type="video" data-src="doc_cesaria_preview.mp4" data-cap="'Cesária Évora' Archival Documentary — biography edited with archival imagery, photo treatments and torn-paper collage effects for emotional storytelling.">
+      <div class="media"><img src="vid_cesaria.jpg" alt="Cesária Évora documentary"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing</div></div>
+      <div class="body"><h3>"Cesária Évora" Documentary</h3><p>Archival biography with photo treatments and collage effects for emotional storytelling.</p><span class="res">▲ Research + archive editing</span></div></div>
+    <div class="pcard" data-cat="video" data-type="youtube" data-src="WxIlBjDOhYc" data-cap="'The Nissan CEO's Epic Escape' — the true story of Carlos Ghosn's escape from Japan, edited for a client storytelling channel: research, script, pacing, sound design and graphics.">
+      <div class="media"><img src="https://i.ytimg.com/vi/WxIlBjDOhYc/hqdefault.jpg" alt="Nissan CEO escape" loading="lazy"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing</div></div>
+      <div class="body"><h3>"The Nissan CEO's Epic Escape"</h3><p>True-story documentary edited for a client channel — full pipeline.</p><span class="res">▲ Editing + graphic design</span></div></div>
+    <div class="pcard" data-cat="video" data-type="youtube" data-src="dd-yg8AydQM" data-cap="'How Hackers Use WhatsApp to Steal' — educational tech explainer on digital security, edited for a client: narration, motion graphics and clear visual storytelling.">
+      <div class="media"><img src="https://i.ytimg.com/vi/dd-yg8AydQM/hqdefault.jpg" alt="WhatsApp hackers explainer" loading="lazy"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing</div></div>
+      <div class="body"><h3>"How Hackers Use WhatsApp"</h3><p>Educational tech explainer with narration and motion graphics.</p><span class="res">▲ Retention-focused editing</span></div></div>
+    <div class="pcard" data-cat="reels" data-type="video" data-src="reel_bk.mp4" data-cap="Client Reel — vertical reel produced for agency clients (BK-Nação): hook, captions, pacing and brand consistency.">
+      <div class="media vert"><img src="vid_bk_NC2.jpg" alt="BK-Nação reel"><div class="play"><span>▶</span></div><div class="tagcat">Reel 9:16</div></div>
+      <div class="body"><h3>Client Reel Production</h3><p>Vertical reel for agency clients — hook, captions and brand consistency.</p><span class="res">▲ Made for engagement</span></div></div>
+    <div class="pcard" data-cat="reels" data-type="video" data-src="reel_gta.mp4" data-cap="'GTA: Luanda' Concept Edit — viral-style concept short imagining GTA set in Luanda: AI-assisted visuals, game-style graphics and trend-driven editing.">
+      <div class="media vert"><img src="vid_GTA_6_Luanda.jpg" alt="GTA Luanda concept"><div class="play"><span>▶</span></div><div class="tagcat">Concept Short</div></div>
+      <div class="body"><h3>"GTA: Luanda" Concept</h3><p>Viral-style concept short — AI visuals, game graphics, trend editing.</p><span class="res">▲ Trend + AI + editing</span></div></div>
+    <div class="pcard" data-cat="reels" data-type="img" data-src="vid_aRCHITECTURE_AD.jpg" data-cap="Architecture &amp; Renovation Ad — commercial ad edit with AI-generated visuals, subtitles and a clear sales message, concept to final cut.">
+      <div class="media"><img src="vid_aRCHITECTURE_AD.jpg" alt="Architecture ad"><div class="tagcat">Ad Creative</div></div>
+      <div class="body"><h3>Architecture &amp; Renovation Ad</h3><p>Commercial ad with AI visuals, subtitles and a clear sales message.</p><span class="res">▲ Full ad production</span></div></div>
+    <div class="pcard" data-cat="design" data-type="img" data-src="6275965.jpg" data-cap="Dental Clinic Ad Campaign — paid-ad creative for a dental clinic (client: BK-Nação): bold offer, clean hierarchy and brand-consistent design built to convert.">
+      <div class="media"><img src="6275965.jpg" alt="Dental clinic ad"><div class="tagcat">Social Ad</div></div>
+      <div class="body"><h3>Dental Clinic Ad Campaign</h3><p>Paid-ad creative — bold offer, clean hierarchy, built to convert.</p><span class="res">▲ Designed for conversion</span></div></div>
+    <div class="pcard" data-cat="design" data-type="img" data-src="6730772.jpg" data-cap="Medical Recruitment Poster — character illustration, typography and layout for a clinic recruitment campaign: friendly but professional.">
+      <div class="media"><img src="6730772.jpg" alt="Recruitment poster"><div class="tagcat">Poster</div></div>
+      <div class="body"><h3>Medical Recruitment Poster</h3><p>Illustration, typography and layout — friendly but professional.</p><span class="res">▲ Illustration + layout</span></div></div>
+    <div class="pcard" data-cat="design" data-type="img" data-src="capa1.jpg" data-cap="Healthcare Brand Cover — cover design with photography treatment, color grading and typography for a healthcare brand's social presence.">
+      <div class="media"><img src="capa1.jpg" alt="Brand cover"><div class="tagcat">Brand Visual</div></div>
+      <div class="body"><h3>Healthcare Brand Cover</h3><p>Photography treatment, color grading and typography.</p><span class="res">▲ Cross-platform identity</span></div></div>
+    <div class="pcard" data-cat="thumb" data-type="img" data-src="thumb_hack.jpg" data-cap="YouTube Thumbnail — 'Hack R$1 Billion': high contrast, bold type and a strong focal point, designed to maximize click-through.">
+      <div class="media"><img src="thumb_hack.jpg" alt="Hack thumbnail"><div class="tagcat">Thumbnail</div></div>
+      <div class="body"><h3>Click-Driven Thumbnail</h3><p>High contrast, bold type, curiosity-driven composition.</p><span class="res">▲ Designed for CTR</span></div></div>
+    <div class="pcard" data-cat="thumb" data-type="img" data-src="thumb_kim.jpg" data-cap="YouTube Thumbnail — English true-story channel: detective-board collage with red-string theme, texture and props that earn the click.">
+      <div class="media"><img src="thumb_kim.jpg" alt="Kim story thumbnail"><div class="tagcat">Thumbnail</div></div>
+      <div class="body"><h3>Story-Collage Thumbnail</h3><p>Detective-board collage with texture, props and intrigue.</p><span class="res">▲ Visual storytelling</span></div></div>
+    <div class="pcard" data-cat="thumb" data-type="img" data-src="thumb_feliznoche.jpg" data-cap="YouTube Thumbnail — 'Feliz Noche': clean composition balancing a central portrait with brand logos. Loud without being messy.">
+      <div class="media"><img src="thumb_feliznoche.jpg" alt="Feliz Noche thumbnail"><div class="tagcat">Thumbnail</div></div>
+      <div class="body"><h3>Brand-Story Thumbnail</h3><p>Central portrait balanced with brand logos — clean and bold.</p><span class="res">▲ Series consistency</span></div></div>
+    <div class="pcard" data-cat="arch" data-type="img" data-src="wiz_1.jpg" data-cap="Photorealistic Building Render — exterior visualization produced at Karpiel Steindel architecture studio: modeling, materials, lighting and post-production.">
+      <div class="media"><img src="wiz_1.jpg" alt="Building render"><div class="tagcat">3D Render</div></div>
+      <div class="body"><h3>Photorealistic Building Render</h3><p>Studio exterior visualization — modeling, lighting, post.</p><span class="res">▲ Studio-grade 3D</span></div></div>
+    <div class="pcard" data-cat="arch" data-type="img" data-src="pagina.jpg" data-cap="Interior Visualization Set — complete interior render series: composition, lighting and materials with an architect's precision.">
+      <div class="media"><img src="pagina.jpg" alt="Interior renders"><div class="tagcat">Interior 3D</div></div>
+      <div class="body"><h3>Interior Visualization Set</h3><p>Render series — composition, lighting and materials.</p><span class="res">▲ Plan to photorealistic</span></div></div>
+    <div class="pcard" data-cat="arch" data-type="img" data-src="render_beforeafter.jpg" data-cap="Raw Render → Final Image — color grading, contrast shaping and atmosphere added in post-production. The same finishing I apply to every video frame.">
+      <div class="media"><img src="render_beforeafter.jpg" alt="Before after render"><div class="tagcat">Before / After</div></div>
+      <div class="body"><h3>Raw Render → Final Image</h3><p>Color grading and atmosphere added in post — editing made visible.</p><span class="res">▲ Editing skill, side by side</span></div></div>
+  </div>
+</div></section>
+<section id="services" style="background:var(--surface);border-top:1px solid var(--line)"><div class="wrap">
+  <span class="eyebrow">What I Do</span>
+  <h2 class="title">Services I offer</h2>
+  <p class="lead">From a single thumbnail to a full content pipeline — pick what you need, or let me handle it end to end.</p>
+  <div class="svc-grid">
+    <div class="svc"><div class="ic">🎬</div><h3>Video Editing</h3><p>Long-form, Reels, Shorts, ads and documentaries. Scripting, color, captions, sound and motion graphics — Premiere, After Effects, CapCut &amp; DaVinci.</p></div>
+    <div class="svc"><div class="ic">🎨</div><h3>Graphic Design</h3><p>Thumbnails, social graphics, posters, branding and ad creatives. Award-winning design background with an architect's eye for composition.</p></div>
+    <div class="svc"><div class="ic">✍️</div><h3>Content &amp; SEO</h3><p>Scriptwriting, copywriting, keyword research and content calendars across Instagram, YouTube, TikTok and Facebook — driven by metrics.</p></div>
+    <div class="svc"><div class="ic">🏛</div><h3>Architecture &amp; 3D</h3><p>Photorealistic exterior &amp; interior visualizations, concept design and presentation boards — modeling, lighting and post-production.</p></div>
+    <div class="svc"><div class="ic">💻</div><h3>Web &amp; AI</h3><p>WordPress sites, HTML/CSS landing pages, plus AI generation for text, image, sound and video to cut production time dramatically.</p></div>
+    <div class="svc"><div class="ic">📱</div><h3>Channel Support</h3><p>Need help managing a channel or social page? Posting, repurposing long-form into Shorts, thumbnails and consistent publishing.</p></div>
+  </div>
+</div></section>
+<section style="padding:90px 0"><div class="contact" id="contact"><div class="contact-blob"></div><div style="position:relative;z-index:2">
+  <span class="eyebrow">Contact</span>
+  <h2>Let's make something<br>people actually watch</h2>
+  <p>Available for full-time remote roles, freelance projects and ongoing collaborations. Based in Kraków, Poland — no work permit needed for EU employers.</p>
+  <div class="contact-btns"><a class="btn" href="mailto:anselmokamata24@gmail.com">📧 anselmokamata24@gmail.com</a><a class="btn ghost" href="tel:+48505695239">📞 +48 505 695 239</a></div>
+  <div class="socials">
+    <a href="https://www.youtube.com/@CidadaosExemplares/videos" target="_blank" rel="noopener">▶ Cidadãos Exemplares</a>
+    <a href="https://www.youtube.com/@WitenessThis/videos" target="_blank" rel="noopener">▶ Witness This Ca$e</a>
+    <a href="https://bknacao.net/" target="_blank" rel="noopener">🌐 BK-Nação</a>
+    <a href="https://www.instagram.com/bk_nacao_/" target="_blank" rel="noopener">📷 @bk_nacao_</a>
+  </div>
+</div></div></section>
+<footer>© 2026 Anselmo Kamata — Video Editor, Designer &amp; Content Creator · Kraków, Poland 🇵🇱</footer>
+<div class="lb" id="lb">
+  <span class="lb-count" id="lbCount"></span>
+  <button class="lb-close" id="lbClose">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev">‹</button>
+  <button class="lb-nav lb-next" id="lbNext">›</button>
+  <div class="lb-inner"><div class="lb-media" id="lbMedia"></div><div class="lb-body"><div class="cat" id="lbCat"></div><h3 id="lbTitle"></h3><p id="lbCap"></p></div></div>
 </div>
-
-<!-- SHOWREEL -->
-<section class="reel" id="showreel">
-  <div class="wrap">
-    <span class="tag">Showreel</span>
-    <h2>60 seconds of what I do</h2>
-    <div class="video-frame">
-      <iframe src="https://www.youtube-nocookie.com/embed/R_FEaVgqPMM" title="Maior Golpe Cibernético do Brasil" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p style="color:var(--muted);font-size:14px;margin-top:14px">Featured: <b style="color:var(--text)">"Brazil's Biggest Cyber Heist"</b> — full editing and graphic design delivered for a client YouTube channel: research-driven storytelling about technology and real events, with motion graphics, sound design and a custom thumbnail.</p>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-  <div class="wrap">
-    <span class="tag">Services</span>
-    <h2>What I can do for you</h2>
-    <div class="cards">
-      <div class="card"><div class="ico">🎬</div><h3>Video Editing</h3><p>YouTube long-form, Reels/TikTok/Shorts, ads and video essays. Scripting, voiceover, narration, cutting, color, captions and sound — full pipeline in Adobe Premiere &amp; After Effects.</p></div>
-      <div class="card"><div class="ico">🎨</div><h3>Graphic Design</h3><p>Thumbnails, social media graphics, posters, branding and ad creatives in Photoshop and Figma. Award-winning poster design background with an architect's eye for composition.</p></div>
-      <div class="card"><div class="ico">✍️</div><h3>Content, SEO &amp; Writing</h3><p>Scriptwriting, copywriting and SEO-optimized content. Keyword research, content calendars and publishing across Instagram, YouTube, TikTok and Facebook — driven by metrics.</p></div>
-      <div class="card"><div class="ico">💻</div><h3>Web &amp; AI Production</h3><p>WordPress sites, HTML/CSS basics and landing pages — plus prompt engineering for text, image, sound and video generation to cut production time dramatically.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- WORK -->
-<section id="work" style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-  <div class="wrap">
-    <span class="tag">Selected Work</span>
-    <h2>Projects with context &amp; results</h2>
-
-    <!-- ====== VIDEO EDITING ====== -->
-    <h3 class="cat-title">🎬 Video Editing</h3>
-    <div class="work-grid">
-      <div class="work">
-        <div class="thumb"><video controls preload="none" poster="vid_carlos.jpg" src="doc_carlos_preview.mp4"></video></div>
-        <div class="info">
-          <div class="meta">Long-Form Documentary · Press Play ▶</div>
-          <h3>Animated Documentary Edit</h3>
-          <p>Full-length documentary built with illustrated motion graphics — custom animation, pacing and narration sync from start to finish. 2-minute preview; full film on request.</p>
-          <span class="result">▲ Motion design + long-form editing</span>
-        </div>
-      </div>
-
-      <div class="work">
-        <div class="thumb"><video controls preload="none" poster="vid_cesaria.jpg" src="doc_cesaria_preview.mp4"></video></div>
-        <div class="info">
-          <div class="meta">Long-Form Documentary · Press Play ▶</div>
-          <h3>"Cesária Évora" — Archival Documentary</h3>
-          <p>Biography documentary edited with archival imagery, photo treatments and torn-paper collage effects for emotional storytelling. 2-minute preview; full film on request.</p>
-          <span class="result">▲ Research + archive + emotional pacing</span>
-        </div>
-      </div>
-
-      <div class="work">
-        <div class="thumb"><iframe src="https://www.youtube-nocookie.com/embed/WxIlBjDOhYc" title="The Nissan CEO's Epic Escape" loading="lazy" allowfullscreen></iframe></div>
-        <div class="info">
-          <div class="meta">Client Channel · YouTube Long-Form</div>
-          <h3>"The Nissan CEO's Epic Escape"</h3>
-          <p>The true story of Carlos Ghosn's escape from Japan — edited for a storytelling channel: research, script, pacing, sound design and graphics.</p>
-          <span class="result">▲ Video editing + graphic design</span>
-        </div>
-      </div>
-
-      <div class="work">
-        <div class="thumb"><iframe src="https://www.youtube-nocookie.com/embed/dd-yg8AydQM" title="How Hackers Use WhatsApp to Steal" loading="lazy" allowfullscreen></iframe></div>
-        <div class="info">
-          <div class="meta">Client Channel · YouTube Long-Form</div>
-          <h3>"How Hackers Use WhatsApp to Steal"</h3>
-          <p>Educational tech explainer on digital security, edited for a client — narration, motion graphics and clear visual storytelling.</p>
-          <span class="result">▲ Educational content that retains viewers</span>
-        </div>
-      </div>
-
-      <div class="work">
-        <div class="thumb"><iframe src="https://www.youtube-nocookie.com/embed/CPMVIgAd4vI" title="Carlos Ghosn: The Escape #shorts" loading="lazy" allowfullscreen></iframe></div>
-        <div class="info">
-          <div class="meta">YouTube Shorts · Vertical 9:16</div>
-          <h3>"Carlos Ghosn: The Escape, in 60s"</h3>
-          <p>Long-form stories re-cut into punchy vertical Shorts — hooks, captions and fast pacing built for retention.</p>
-          <span class="result">▲ One story → multiple formats</span>
-        </div>
-      </div>
-
-      <a class="work" href="https://www.youtube.com/@WitenessThis/videos" target="_blank" rel="noopener">
-        <div class="thumb"><img src="maxresdefault.jpg" alt="Witness This Ca$e thumbnail" loading="lazy"></div>
-        <div class="info">
-          <div class="meta">Client Channel · English Long-Form</div>
-          <h3>English Storytelling Channel</h3>
-          <p>Video editing and thumbnail/graphic design services for an English-language channel — faceless narration, 3D-style visuals and bold thumbnails.</p>
-          <span class="result">▲ Editing + design · View work →</span>
-        </div>
-      </a>
-    </div>
-
-    <!-- ====== SHORT-FORM / REELS ====== -->
-    <h3 class="cat-title">📱 Reels &amp; Short-Form</h3>
-    <div class="work-grid">
-      <div class="work">
-        <div class="thumb vert"><video controls preload="none" poster="vid_bk_NC2.jpg" src="reel_bk.mp4"></video></div>
-        <div class="info">
-          <div class="meta">Instagram Reel · Client: BK-Nação</div>
-          <h3>Client Reel Production</h3>
-          <p>Vertical reel produced for agency clients — hook, captions, pacing and brand consistency. More on the agency's Instagram: <a href="https://www.instagram.com/bk_nacao_/" target="_blank" rel="noopener" style="color:var(--accent)">@bk_nacao_</a></p>
-          <span class="result">▲ Press play ▶ · Made for engagement</span>
-        </div>
-      </div>
-
-      <div class="work">
-        <div class="thumb vert"><video controls preload="none" poster="vid_GTA_6_Luanda.jpg" src="reel_gta.mp4"></video></div>
-        <div class="info">
-          <div class="meta">Creative Concept · Vertical Short</div>
-          <h3>"GTA: Luanda" Concept Edit</h3>
-          <p>Viral-style concept short imagining GTA set in Luanda — AI-assisted visuals, game-style graphics and trend-driven editing.</p>
-          <span class="result">▲ Press play ▶ · Trend + AI + editing</span>
-        </div>
-      </div>
-
-      <div class="work">
-        <div class="thumb"><img src="vid_aRCHITECTURE_AD.jpg" alt="Architecture renovation ad" loading="lazy"></div>
-        <div class="info">
-          <div class="meta">Commercial · Ad Creative</div>
-          <h3>Architecture &amp; Renovation Ad</h3>
-          <p>Commercial ad edit with AI-generated visuals, subtitles and a clear sales message — concept to final cut.</p>
-          <span class="result">▲ Full ad production, one person</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ====== GRAPHIC DESIGN ====== -->
-    <h3 class="cat-title">🎨 Graphic Design</h3>
-    <div class="work-grid">
-      <div class="work">
-        <div class="thumb"><img class="gallery-item" src="6275965.jpg" alt="Dental implant social media ad" data-caption="Dental Clinic Ad Campaign — paid-ad creative for BK-Nação (bknacao.net)" loading="lazy"></div>
-        <div class="info">
-          <div class="meta
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);});
+  var filters=document.querySelectorAll('.filter'),cards=[].slice.call(document.querySelectorAll('.pcard'));
+  filters.forEach(function(b){b.addEventListener('click',function(){
+    filters.forEach(function(x){x.classList.remove('active')});b.classList.add('active');
+    var f=b.getAttribute('data-f');
+    cards.forEach(function(c){c.classList.toggle('hidden',!(f==='all'||c.getAttribute('data-cat')===f));});
+    rebuildList();
+  });});
+  var lb=document.getElementById('lb'),media=document.getElementById('lbMedia'),cat=document.getElementById('lbCat'),title=document.getElementById('lbTitle'),cap=document.getElementById('lbCap'),count=document.getElementById('lbCount');
+  var list=[],idx=0;
+  function rebuildList(){list=cards.filter(function(c){return !c.classList.contains('hidden');});}
+  rebuildList();
+  function render(){
+    var c=list[idx],type=c.getAttribute('data-type'),src=c.getAttribute('data-src');media.innerHTML='';
+    if(type==='img'){var im=new Image();im.src=src;media.appendChild(im);}
+    else if(type==='video'){var v=document.createElement('video');v.src=src;v.controls=true;v.autoplay=true;v.playsInline=true;media.appendChild(v);}
+    else if(type==='youtube'){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+src+'?autoplay=1';f.allow='autoplay; encrypted-media; fullscreen';f.allowFullscreen=true;media.appendChild(f);}
+    cat.textContent=c.querySelector('.tagcat')?c.querySelector('.tagcat').textContent:'';
+    title.textContent=c.querySelector('h3').textContent;cap.textContent=c.getAttribute('data-cap')||'';
+    count.textContent=(idx+1)+' / '+list.length;
+  }
+  function open(card){rebuildList();idx=list.indexOf(card);render();lb.classList.add('open');document.body.style.overflow='hidden';}
+  function close(){media.innerHTML='';lb.classList.remove('open');document.body.style.overflow='';}
+  function go(n){idx=(n+list.length)%list.length;render();}
+  cards.forEach(function(c){c.addEventListener('click',function(){open(c);});});
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbNext').addEventListener('click',function(e){e.stopPropagation();go(idx+1);});
+  document.getElementById('lbPrev').addEventListener('click',function(e){e.stopPropagation();go(idx-1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')go(idx+1);else if(e.key==='ArrowLeft')go(idx-1);});
+  var tx=null;
+  lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;if(dx<-40)go(idx+1);else if(dx>40)go(idx-1);tx=null;},{passive:true});
+})();
+</script>
+</body>
+</html>
