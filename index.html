@@ -137,13 +137,23 @@ nav.scrolled{border-color:var(--line);background:rgba(247,247,244,.95)}
 .socials a:hover{background:#fff;color:var(--ink);border-color:#fff}
 footer{text-align:center;padding:40px 0;font-size:13.5px;color:var(--muted)}
 @media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr;gap:40px}.hero-visual{max-width:360px;margin:0 auto}.nav-links{display:none}section{padding:80px 0}.info-row{grid-template-columns:120px 1fr}}
+.frame.snap{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:linear-gradient(150deg,#16235c,#3b5bff 55%,#7e93ff);color:#fff;text-align:center;padding:20px}
+.snap-mark{font-family:'Sora';font-weight:800;font-size:92px;line-height:1;letter-spacing:-3px}
+.snap-cap{font-family:'Sora';font-weight:700;font-size:22px}.snap-cap span{display:block;font-family:'Inter';font-weight:500;font-size:13.5px;opacity:.85;margin-top:6px;letter-spacing:.5px}
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-top:50px}
+.tool{display:flex;gap:16px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px;transition:.25s}
+.tool:hover{box-shadow:var(--shadow);transform:translateY(-3px);border-color:transparent}
+.tool .ti{width:44px;height:44px;flex-shrink:0;border-radius:11px;background:var(--bg);display:flex;align-items:center;justify-content:center}
+.tool .ti img{width:26px;height:26px;object-fit:contain}
+.tool h4{font-size:15.5px;font-weight:700;margin-bottom:3px}
+.tool p{font-size:12.5px;color:var(--ink2);line-height:1.5}
 @media(max-width:560px){.hb1{left:8px}.hb2{right:8px}.contact{margin:0 16px;padding:60px 24px}}
 </style>
 </head>
 <body>
 <nav id="nav"><div class="nav-in">
   <a href="#home" class="logo">Anselmo<span>.</span></a>
-  <div class="nav-links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+  <div class="nav-links"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#tools">Tools</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
   <a href="#contact" class="btn sm">Hire Me</a>
 </div></nav>
 <header class="hero" id="home"><div class="wrap"><div class="hero-grid">
@@ -165,7 +175,7 @@ footer{text-align:center;padding:40px 0;font-size:13.5px;color:var(--muted)}
   <span>Video Editing</span><span>Graphic Design</span><span>Thumbnails</span><span>Motion Graphics</span><span>Reels &amp; Shorts</span><span>3D Visualization</span><span>Content Strategy</span><span>SEO &amp; Copywriting</span>
 </div></div>
 <section id="about"><div class="wrap"><div class="about-grid">
-  <div class="about-photo"><div class="frame"><img src="photo.png" alt="Anselmo Kamata"></div><div class="deco"></div></div>
+  <div class="about-photo"><div class="frame snap"><div class="snap-mark">AK</div><div class="snap-cap">Anselmo Kamata<span>Video · Design · Content · 3D</span></div></div><div class="deco"></div></div>
   <div class="about">
     <span class="eyebrow">About Me</span>
     <h2 class="title">A creative who can do<br>the whole pipeline</h2>
@@ -186,19 +196,6 @@ footer{text-align:center;padding:40px 0;font-size:13.5px;color:var(--muted)}
     </div>
   </div>
 </div></div></section>
-<section id="experience" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
-  <span class="eyebrow">Experience &amp; Clients</span>
-  <h2 class="title">Who I've worked with</h2>
-  <p class="lead">A selection of brands, agencies and channels I've delivered editing, design and content services for.</p>
-  <div class="exp-grid">
-    <div class="exp"><div class="role">Video Editor &amp; Graphic Design</div><h3>Cidadãos Exemplares</h3><div class="yr">Client YouTube channel · Educational tech &amp; storytelling</div><p>Full editing for long-form documentaries and Shorts — research-driven storytelling, motion graphics, sound design and custom thumbnails.</p><a class="more" href="https://www.youtube.com/@CidadaosExemplares/videos" target="_blank" rel="noopener">View channel →</a></div>
-    <div class="exp"><div class="role">Video Editor &amp; Thumbnails</div><h3>Witness This Ca$e</h3><div class="yr">Client YouTube channel · English true-story</div><p>Editing and thumbnail/graphic design for an English-language storytelling channel — faceless narration, 3D-style visuals and bold, click-driven thumbnails.</p><a class="more" href="https://www.youtube.com/@WitenessThis/videos" target="_blank" rel="noopener">View channel →</a></div>
-    <div class="exp"><div class="role">Content Creator &amp; Designer</div><h3>BK-Nação Marketing &amp; Design</h3><div class="yr">Agency · Healthcare &amp; social media</div><p>Original video, image and copy for clients' social media — Instagram reels &amp; ads (1:1 / 9:16), content calendars and metric-driven optimization.</p><a class="more" href="https://bknacao.net/" target="_blank" rel="noopener">Visit agency →</a></div>
-    <div class="exp"><div class="role">3D Visualization &amp; Design</div><h3>Karpiel Steindel</h3><div class="yr">Architecture studio · Assistant</div><p>Photorealistic exterior &amp; interior visualizations, project research and design presentations for an international architecture practice.</p></div>
-    <div class="exp"><div class="role">Content &amp; Community</div><h3>Mais Futebol-News</h3><div class="yr">Facebook · Copywriting &amp; community</div><p>Researched, copywrote and published daily content that grew and sustained an engaged sports community of 20,000+ followers.</p><a class="more" href="https://www.facebook.com/share/1Ck31ozTPC/?mibextid=wwXIfr" target="_blank" rel="noopener">View page →</a></div>
-    <div class="exp"><div class="role">Video</div><h3>Eterna Aprendizagem</h3><div class="yr">Client YouTube channel · Educational</div><p>Scripted and edited educational, culturally engaging videos with consistent community growth and viewer interaction.</p><a class="more" href="https://www.youtube.com/@eternaaprendizagem/videos" target="_blank" rel="noopener">View channel →</a></div>
-  </div>
-</div></section>
 <section id="work"><div class="wrap">
   <span class="eyebrow">Portfolio</span>
   <h2 class="title">Selected work</h2>
@@ -207,32 +204,57 @@ footer{text-align:center;padding:40px 0;font-size:13.5px;color:var(--muted)}
     <button class="filter active" data-f="all">All</button>
     <button class="filter" data-f="video">Video Editing</button>
     <button class="filter" data-f="reels">Reels &amp; Shorts</button>
+    <button class="filter" data-f="motion">Motion Graphics</button>
     <button class="filter" data-f="design">Graphic Design</button>
     <button class="filter" data-f="thumb">Thumbnails</button>
-    <button class="filter" data-f="arch">Architecture &amp; 3D</button>
+    <button class="filter" data-f="arch">3D &amp; Scenes</button>
   </div>
   <div class="port-grid" id="grid">
-    <div class="pcard" data-cat="video" data-type="video" data-src="doc_carlos_preview.mp4" data-cap="Animated Documentary Edit — full-length documentary built with illustrated motion graphics: custom animation, pacing and narration sync. 2-min preview; full film on request.">
-      <div class="media"><img src="vid_carlos.jpg" alt="Animated documentary"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing</div></div>
-      <div class="body"><h3>Animated Documentary Edit</h3><p>Full-length documentary with custom illustrated motion graphics, pacing and narration sync.</p><span class="res">▲ Motion design + long-form</span></div></div>
-    <div class="pcard" data-cat="video" data-type="video" data-src="doc_cesaria_preview.mp4" data-cap="'Cesária Évora' Archival Documentary — biography edited with archival imagery, photo treatments and torn-paper collage effects for emotional storytelling.">
-      <div class="media"><img src="vid_cesaria.jpg" alt="Cesária Évora documentary"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing</div></div>
-      <div class="body"><h3>"Cesária Évora" Documentary</h3><p>Archival biography with photo treatments and collage effects for emotional storytelling.</p><span class="res">▲ Research + archive editing</span></div></div>
+    <div class="pcard" data-cat="video" data-type="video" data-src="kim_preview.mp4" data-cap="'The Kim Kardashian Paris Heist' — long-form English true-story edit. Cold-open hook, tight J-cuts and L-cuts to keep momentum, archival + recreated footage, on-screen titles, sound design and a music bed that builds tension. Full film on request.">
+      <div class="media"><img src="p_kim_preview.jpg" alt="Kim Kardashian heist documentary"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing · English</div></div>
+      <div class="body"><h3>"The Kim Kardashian Paris Heist"</h3><p><b>How it's edited:</b> cold-open hook, J/L-cuts for pace, archival + B-roll layering, titles, sound design and tension-building music. English long-form.</p><span class="res">▲ Flagship long-form edit</span></div></div>
+    <div class="pcard" data-cat="video" data-type="video" data-src="carlos_start.mp4" data-cap="'The Nissan CEO's Escape' — opening of an animated documentary. Illustrated motion-graphics scenes, kinetic typography, narration synced frame-to-frame, and pacing that turns a true story into a thriller. Full film on request.">
+      <div class="media"><img src="p_carlos_start.jpg" alt="Carlos Ghosn animated documentary"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing · Motion</div></div>
+      <div class="body"><h3>Animated Documentary — Opening</h3><p><b>How it's edited:</b> illustrated motion-graphic scenes, kinetic typography, frame-accurate narration sync, thriller-style pacing.</p><span class="res">▲ Motion design + long-form</span></div></div>
+    <div class="pcard" data-cat="video" data-type="video" data-src="cesaria_start.mp4" data-cap="'Cesária Évora' — opening of an archival biography documentary. Restored archival photos, torn-paper collage transitions, gentle Ken-Burns moves and rhythm matched to the music for an emotional build. Full film on request.">
+      <div class="media"><img src="p_cesaria_start.jpg" alt="Cesária Évora documentary"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing · Archival</div></div>
+      <div class="body"><h3>"Cesária Évora" — Opening</h3><p><b>How it's edited:</b> restored archival imagery, torn-paper collage transitions, Ken-Burns motion and music-matched rhythm for emotion.</p><span class="res">▲ Research + archive editing</span></div></div>
+    <div class="pcard" data-cat="video" data-type="video" data-src="perfect_crime.mp4" data-cap="'Perfect Crime Turned Nightmare' — English true-story edit. Hook-first structure, montage cutting, motion-graphic stat cards, captions and sound design that keep retention high.">
+      <div class="media"><img src="p_perfect_crime.jpg" alt="Perfect crime story"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing · English</div></div>
+      <div class="body"><h3>"Perfect Crime Turned Nightmare"</h3><p><b>How it's edited:</b> hook-first structure, montage cutting, motion-graphic stat cards, captions and sound design for retention.</p><span class="res">▲ Retention-focused storytelling</span></div></div>
     <div class="pcard" data-cat="video" data-type="youtube" data-src="WxIlBjDOhYc" data-cap="'The Nissan CEO's Epic Escape' — the true story of Carlos Ghosn's escape from Japan, edited for a client storytelling channel: research, script, pacing, sound design and graphics.">
       <div class="media"><img src="https://i.ytimg.com/vi/WxIlBjDOhYc/hqdefault.jpg" alt="Nissan CEO escape" loading="lazy"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing</div></div>
       <div class="body"><h3>"The Nissan CEO's Epic Escape"</h3><p>True-story documentary edited for a client channel — full pipeline.</p><span class="res">▲ Editing + graphic design</span></div></div>
     <div class="pcard" data-cat="video" data-type="youtube" data-src="dd-yg8AydQM" data-cap="'How Hackers Use WhatsApp to Steal' — educational tech explainer on digital security, edited for a client: narration, motion graphics and clear visual storytelling.">
       <div class="media"><img src="https://i.ytimg.com/vi/dd-yg8AydQM/hqdefault.jpg" alt="WhatsApp hackers explainer" loading="lazy"><div class="play"><span>▶</span></div><div class="tagcat">Video Editing</div></div>
       <div class="body"><h3>"How Hackers Use WhatsApp"</h3><p>Educational tech explainer with narration and motion graphics.</p><span class="res">▲ Retention-focused editing</span></div></div>
+    <div class="pcard" data-cat="video" data-type="youtube" data-src="pyYPIEEDK20" data-cap="'D4vd: The Dark Truth Behind His Music' — investigative-journalism style video case edited for a client channel: deep research, narrative structure, evidence cuts, motion graphics and sound design.">
+      <div class="media"><img src="https://i.ytimg.com/vi/pyYPIEEDK20/hqdefault.jpg" alt="D4vd investigative case" loading="lazy"><div class="play"><span>▶</span></div><div class="tagcat">Investigative</div></div>
+      <div class="body"><h3>"D4vd: The Dark Truth"</h3><p>Investigative-journalism style case — research, narrative structure and evidence-driven editing.</p><span class="res">▲ Investigative storytelling</span></div></div>
     <div class="pcard" data-cat="reels" data-type="video" data-src="reel_bk.mp4" data-cap="Client Reel — vertical reel produced for agency clients (BK-Nação): hook, captions, pacing and brand consistency.">
       <div class="media vert"><img src="vid_bk_NC2.jpg" alt="BK-Nação reel"><div class="play"><span>▶</span></div><div class="tagcat">Reel 9:16</div></div>
       <div class="body"><h3>Client Reel Production</h3><p>Vertical reel for agency clients — hook, captions and brand consistency.</p><span class="res">▲ Made for engagement</span></div></div>
     <div class="pcard" data-cat="reels" data-type="video" data-src="reel_gta.mp4" data-cap="'GTA: Luanda' Concept Edit — viral-style concept short imagining GTA set in Luanda: AI-assisted visuals, game-style graphics and trend-driven editing.">
       <div class="media vert"><img src="vid_GTA_6_Luanda.jpg" alt="GTA Luanda concept"><div class="play"><span>▶</span></div><div class="tagcat">Concept Short</div></div>
       <div class="body"><h3>"GTA: Luanda" Concept</h3><p>Viral-style concept short — AI visuals, game graphics, trend editing.</p><span class="res">▲ Trend + AI + editing</span></div></div>
+    <div class="pcard" data-cat="reels" data-type="youtube" data-src="J6jVCufWCcU" data-cap="'How They Robbed $10M from Kim Kardashian' — vertical Short cut from a long-form true-story video: punchy hook, captions and fast pacing built for retention.">
+      <div class="media vert"><img src="https://i.ytimg.com/vi/J6jVCufWCcU/hqdefault.jpg" alt="Kim Kardashian robbery short" loading="lazy"><div class="play"><span>▶</span></div><div class="tagcat">YouTube Short</div></div>
+      <div class="body"><h3>"$10M Kim Kardashian Heist" Short</h3><p>Vertical Short cut from a long-form story — hook, captions, fast pacing for retention.</p><span class="res">▲ Long-form → viral Short</span></div></div>
+    <div class="pcard" data-cat="reels" data-type="video" data-src="david_tesla.mp4" data-cap="'David Tesla Case' — vertical Short. Strong opening hook, captions, fast cuts and a clear story beat in under a minute — built for Shorts/Reels retention.">
+      <div class="media vert"><img src="p_david_tesla.jpg" alt="David Tesla case short"><div class="play"><span>▶</span></div><div class="tagcat">Short · English</div></div>
+      <div class="body"><h3>"David Tesla Case" Short</h3><p><b>How it's edited:</b> hook in the first 2s, captions, fast cuts, one clear story beat — made for vertical retention.</p><span class="res">▲ Press play ▶ · Vertical short</span></div></div>
+    <div class="pcard" data-cat="reels" data-type="video" data-src="robber_diamond.mp4" data-cap="'Robber's Diamond Disaster' — vertical Short cut from a long-form story. Punchy pacing, captions and a payoff ending built for shares.">
+      <div class="media vert"><img src="p_robber_diamond.jpg" alt="Robber diamond short"><div class="play"><span>▶</span></div><div class="tagcat">Short · English</div></div>
+      <div class="body"><h3>"Robber's Diamond Disaster" Short</h3><p><b>How it's edited:</b> long-form re-cut to a punchy vertical — captions, tight pacing and a payoff ending.</p><span class="res">▲ Long-form → viral short</span></div></div>
     <div class="pcard" data-cat="reels" data-type="img" data-src="vid_aRCHITECTURE_AD.jpg" data-cap="Architecture &amp; Renovation Ad — commercial ad edit with AI-generated visuals, subtitles and a clear sales message, concept to final cut.">
       <div class="media"><img src="vid_aRCHITECTURE_AD.jpg" alt="Architecture ad"><div class="tagcat">Ad Creative</div></div>
       <div class="body"><h3>Architecture &amp; Renovation Ad</h3><p>Commercial ad with AI visuals, subtitles and a clear sales message.</p><span class="res">▲ Full ad production</span></div></div>
+    <div class="pcard" data-cat="motion" data-type="video" data-src="motion1.mp4" data-cap="Motion Graphics reel — kinetic typography and animated scene composition built in After Effects: text that moves with rhythm, smooth transitions and layered design elements.">
+      <div class="media"><img src="p_motion1.jpg" alt="Motion graphics reel"><div class="play"><span>▶</span></div><div class="tagcat">Motion Graphics</div></div>
+      <div class="body"><h3>Motion Graphics &amp; Kinetic Type</h3><p><b>Built in After Effects:</b> kinetic typography, animated scene composition, smooth transitions and layered design.</p><span class="res">▲ Press play ▶ · Motion design</span></div></div>
+    <div class="pcard" data-cat="motion" data-type="img" data-src="thumb_ghosn2.jpg" data-cap="'A Fuga' — illustrated key art &amp; animated-style graphic for a documentary opening: flat-design illustration, bold typography and a cinematic composition.">
+      <div class="media"><img src="thumb_ghosn2.jpg" alt="A Fuga illustrated graphic"><div class="tagcat">Animated Graphic</div></div>
+      <div class="body"><h3>"A Fuga" Illustrated Key Art</h3><p>Flat-design illustration and bold typography animated for a documentary opening sequence.</p><span class="res">▲ Illustration + motion</span></div></div>
     <div class="pcard" data-cat="design" data-type="img" data-src="6275965.jpg" data-cap="Dental Clinic Ad Campaign — paid-ad creative for a dental clinic (client: BK-Nação): bold offer, clean hierarchy and brand-consistent design built to convert.">
       <div class="media"><img src="6275965.jpg" alt="Dental clinic ad"><div class="tagcat">Social Ad</div></div>
       <div class="body"><h3>Dental Clinic Ad Campaign</h3><p>Paid-ad creative — bold offer, clean hierarchy, built to convert.</p><span class="res">▲ Designed for conversion</span></div></div>
@@ -251,6 +273,18 @@ footer{text-align:center;padding:40px 0;font-size:13.5px;color:var(--muted)}
     <div class="pcard" data-cat="thumb" data-type="img" data-src="thumb_feliznoche.jpg" data-cap="YouTube Thumbnail — 'Feliz Noche': clean composition balancing a central portrait with brand logos. Loud without being messy.">
       <div class="media"><img src="thumb_feliznoche.jpg" alt="Feliz Noche thumbnail"><div class="tagcat">Thumbnail</div></div>
       <div class="body"><h3>Brand-Story Thumbnail</h3><p>Central portrait balanced with brand logos — clean and bold.</p><span class="res">▲ Series consistency</span></div></div>
+    <div class="pcard" data-cat="thumb" data-type="img" data-src="thumb_whoshot.jpg" data-cap="YouTube Thumbnail — 'Who Shot Her? The Full Story': dramatic 3D-style figures, bold red title and high-contrast lighting engineered for click-through.">
+      <div class="media"><img src="thumb_whoshot.jpg" alt="Who Shot Her thumbnail"><div class="tagcat">Thumbnail</div></div>
+      <div class="body"><h3>"Who Shot Her?" Thumbnail</h3><p>3D-style figures, bold red title and high-contrast lighting — engineered for the click.</p><span class="res">▲ Designed for CTR</span></div></div>
+    <div class="pcard" data-cat="design" data-type="img" data-src="banner_cidadaos.jpg" data-cap="Channel Banner — 'Cidadãos Exemplares': hi-tech identity with custom logotype, depth and a consistent visual system for an educational tech channel.">
+      <div class="media"><img src="banner_cidadaos.jpg" alt="Cidadãos Exemplares channel banner"><div class="tagcat">Channel Branding</div></div>
+      <div class="body"><h3>Channel Banner &amp; Identity</h3><p>Custom logotype, depth and a hi-tech visual system for a client channel's brand.</p><span class="res">▲ Brand identity design</span></div></div>
+    <div class="pcard" data-cat="arch" data-type="img" data-src="scene_funcionario.jpg" data-cap="AI 3D Concept Scene — GTA-style stylized environment with a character, dramatic lighting and game-art composition, generated and art-directed for a video concept.">
+      <div class="media"><img src="scene_funcionario.jpg" alt="GTA-style concept scene"><div class="tagcat">AI 3D Scene</div></div>
+      <div class="body"><h3>Stylized 3D Concept Scene</h3><p>Game-art style environment and character — generated and art-directed for a video concept.</p><span class="res">▲ AI + art direction</span></div></div>
+    <div class="pcard" data-cat="arch" data-type="img" data-src="scene_gta2.jpg" data-cap="AI 3D Concept Scene — stylized interior with characters and cinematic lighting, composed for a story beat in a viral-style concept video.">
+      <div class="media"><img src="scene_gta2.jpg" alt="Stylized interior scene"><div class="tagcat">AI 3D Scene</div></div>
+      <div class="body"><h3>Stylized Interior Scene</h3><p>Cinematic lighting and character staging for a concept-video story beat.</p><span class="res">▲ Concept art for video</span></div></div>
     <div class="pcard" data-cat="arch" data-type="img" data-src="wiz_1.jpg" data-cap="Photorealistic Building Render — exterior visualization produced at Karpiel Steindel architecture studio: modeling, materials, lighting and post-production.">
       <div class="media"><img src="wiz_1.jpg" alt="Building render"><div class="tagcat">3D Render</div></div>
       <div class="body"><h3>Photorealistic Building Render</h3><p>Studio exterior visualization — modeling, lighting, post.</p><span class="res">▲ Studio-grade 3D</span></div></div>
@@ -260,6 +294,38 @@ footer{text-align:center;padding:40px 0;font-size:13.5px;color:var(--muted)}
     <div class="pcard" data-cat="arch" data-type="img" data-src="render_beforeafter.jpg" data-cap="Raw Render → Final Image — color grading, contrast shaping and atmosphere added in post-production. The same finishing I apply to every video frame.">
       <div class="media"><img src="render_beforeafter.jpg" alt="Before after render"><div class="tagcat">Before / After</div></div>
       <div class="body"><h3>Raw Render → Final Image</h3><p>Color grading and atmosphere added in post — editing made visible.</p><span class="res">▲ Editing skill, side by side</span></div></div>
+  </div>
+</div></section>
+<section id="experience" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <span class="eyebrow">Experience &amp; Clients</span>
+  <h2 class="title">Who I've worked with</h2>
+  <p class="lead">A selection of brands, agencies and channels I've delivered editing, design and content services for.</p>
+  <div class="exp-grid">
+    <div class="exp"><div class="role">Video Editor &amp; Graphic Design</div><h3>Cidadãos Exemplares</h3><div class="yr">Client YouTube channel · Educational tech &amp; storytelling</div><p>Full editing for long-form documentaries and Shorts — research-driven storytelling, motion graphics, sound design and custom thumbnails.</p><a class="more" href="https://www.youtube.com/@CidadaosExemplares/videos" target="_blank" rel="noopener">View channel →</a></div>
+    <div class="exp"><div class="role">Video Editor &amp; Thumbnails</div><h3>Witness This Ca$e</h3><div class="yr">Client YouTube channel · English investigative &amp; true-story</div><p>Editing and thumbnail/graphic design for an English-language investigative storytelling channel — faceless narration, evidence-driven cuts, 3D-style visuals and bold thumbnails.</p><a class="more" href="https://www.youtube.com/@WitenessThis/videos" target="_blank" rel="noopener">View channel →</a></div>
+    <div class="exp"><div class="role">Video Essays</div><h3>Eterna Aprendizagem</h3><div class="yr">Client YouTube channel · Video-essay format</div><p>Scripted and edited educational video essays — narrative structure, research and culturally engaging storytelling with steady community growth.</p><a class="more" href="https://www.youtube.com/@eternaaprendizagem" target="_blank" rel="noopener">View channel →</a></div>
+    <div class="exp"><div class="role">Content Creator &amp; Designer</div><h3>BK-Nação Marketing &amp; Design</h3><div class="yr">Agency · Healthcare &amp; social media</div><p>Original video, image and copy for clients' social media — Instagram reels &amp; ads (1:1 / 9:16), content calendars and metric-driven optimization.</p><a class="more" href="https://bknacao.net/" target="_blank" rel="noopener">Visit agency →</a></div>
+    <div class="exp"><div class="role">3D Visualization &amp; Design</div><h3>Karpiel Steindel</h3><div class="yr">Architecture studio · Assistant</div><p>Photorealistic exterior &amp; interior visualizations, project research and design presentations for an international architecture practice.</p></div>
+    <div class="exp"><div class="role">Content &amp; Community</div><h3>Mais Futebol-News</h3><div class="yr">Facebook · Copywriting &amp; community</div><p>Researched, copywrote and published daily content that grew and sustained an engaged sports community of 20,000+ followers.</p><a class="more" href="https://www.facebook.com/share/1Ck31ozTPC/?mibextid=wwXIfr" target="_blank" rel="noopener">View page →</a></div>
+  </div>
+</div></section>
+<section id="tools"><div class="wrap">
+  <span class="eyebrow">Tools I Use</span>
+  <h2 class="title">Software I work with</h2>
+  <p class="lead">The tools behind the work — and exactly what I create with each.</p>
+  <div class="tools-grid">
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/adobe/9999FF" alt="Premiere Pro"></div><div><h4>Adobe Premiere Pro</h4><p>Long-form &amp; short-form editing — cuts, pacing, color and final delivery.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/adobeaftereffects/9999FF" alt="After Effects"></div><div><h4>Adobe After Effects</h4><p>Motion graphics, animated titles, infographics and visual effects.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/davinciresolve/233A51" alt="DaVinci Resolve"></div><div><h4>DaVinci Resolve</h4><p>Cinematic color grading and finishing for a polished, graded look.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/capcut/000000" alt="CapCut"></div><div><h4>CapCut</h4><p>Fast vertical edits, captions and trend-ready Reels &amp; Shorts.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/adobephotoshop/31A8FF" alt="Photoshop"></div><div><h4>Adobe Photoshop</h4><p>Thumbnails, photo manipulation and graphic composition.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/adobeillustrator/FF9A00" alt="Illustrator"></div><div><h4>Adobe Illustrator</h4><p>Logos, vector graphics, posters and print-ready design.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma"></div><div><h4>Figma</h4><p>Social templates, UI layouts and reusable design systems.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/blender/E87D0D" alt="Blender"></div><div><h4>Blender</h4><p>3D modeling, product shots and animated 3D elements.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/autodesk/000000" alt="Autodesk"></div><div><h4>AutoCAD &amp; Revit</h4><p>Architectural drawings, technical plans and BIM modeling.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress"></div><div><h4>WordPress</h4><p>Building and managing websites and landing pages.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/openai/000000" alt="AI tools"></div><div><h4>AI Generation</h4><p>Prompt engineering for text, image, sound &amp; video to speed up production.</p></div></div>
+    <div class="tool"><div class="ti"><img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Canva"></div><div><h4>Canva</h4><p>Quick branded graphics and client-friendly templates.</p></div></div>
   </div>
 </div></section>
 <section id="services" style="background:var(--surface);border-top:1px solid var(--line)"><div class="wrap">
@@ -283,6 +349,7 @@ footer{text-align:center;padding:40px 0;font-size:13.5px;color:var(--muted)}
   <div class="socials">
     <a href="https://www.youtube.com/@CidadaosExemplares/videos" target="_blank" rel="noopener">▶ Cidadãos Exemplares</a>
     <a href="https://www.youtube.com/@WitenessThis/videos" target="_blank" rel="noopener">▶ Witness This Ca$e</a>
+    <a href="https://www.youtube.com/@eternaaprendizagem" target="_blank" rel="noopener">▶ Eterna Aprendizagem</a>
     <a href="https://bknacao.net/" target="_blank" rel="noopener">🌐 BK-Nação</a>
     <a href="https://www.instagram.com/bk_nacao_/" target="_blank" rel="noopener">📷 @bk_nacao_</a>
   </div>
